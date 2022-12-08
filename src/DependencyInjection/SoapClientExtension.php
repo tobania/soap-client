@@ -73,7 +73,7 @@ class SoapClientExtension extends Extension
         $writer = $container->getDefinition('goetas_webservices.soap.stub.client_generator');
         $writer->addMethodCall('setUnwrap', [$config['unwrap_returns']]);
 
-        $forProduction = !!$container->getParameter('goetas_webservices.soap.metadata');
+        $forProduction = !!$container->getParameter('goetas_webservices.soap_client.metadata');
 
         $readerName = 'goetas_webservices.soap.metadata_loader.' . ($forProduction ? 'array' : 'dev');
         $alias = $container->setAlias('goetas_webservices.soap.metadata_reader', $readerName);
