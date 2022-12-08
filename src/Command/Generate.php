@@ -38,7 +38,7 @@ class Generate extends Command
         $debugContainer = $containerBuilder->getDebugContainer();
         //$debugContainer->set('logger', $logger);
 
-        $wsdlMetadata = $debugContainer->getParameter('goetas_webservices.soap.config')['metadata'];
+        $wsdlMetadata = $debugContainer->getParameter('goetas_webservices.soap_client.config')['metadata'];
 
         $schemas = [];
         $portTypes = [];
