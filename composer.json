@@ -23,6 +23,7 @@
     "symfony/dependency-injection": "^3.3|^4.0|^5.0",
     "doctrine/instantiator": "^1.0.3",
     "jms/serializer": "^1.6|^2.0|^3.0",
+    "laminas/laminas-code": "^3.3.2|^4.0",
 
     "goetas-webservices/xsd2php-runtime": "^0.2.11",
     "goetas-webservices/soap-common": "^0.2.0"
